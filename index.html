@@ -1,0 +1,21 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Zapisywanie plików</title>
+  </head>
+  <body>
+    <h1>Zapisz by zapamiętać</h1>
+    Pamiętaj by nie zapisywać
+    <script>
+        document.write(process.versions.node)
+        document.write(process.versions.chrome)
+        document.write(process.versions.electron)
+        fs.writeFileSync('pliczek.txt', 'zawartosc')
+    </script>
+    <br/>
+
+    <button id="save">Zapisywanie</button>
+    <script src="index.js"></script>
+  </body>
+</html>

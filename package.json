@@ -1,0 +1,27 @@
+{
+  "name": "electron-quick-start-2",
+  "version": "1.0.0",
+  "description": "Minimalny przykład, który działa",
+  "main": "./main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win --linux"
+  },
+  "build": {
+   "files": [ "./main.js", "./index.html", "./renderer.js" ],
+   "linux": { "target": ["AppImage", "snap"] }
+  },
+  "repository": "https://github.com/zerotrzy/zzz",
+  "keywords": [
+    "Electron",
+    "przykład"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^10.1.0",
+    "electron-builder": "^22.8.0",
+    "electron-webpack": "^2.8.2",
+    "webpack": "~4.42.1"
+  }
+}
