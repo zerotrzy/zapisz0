@@ -3,16 +3,18 @@
   <head>
     <meta charset="UTF-8">
     <title>Zapisywanie plików</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
   </head>
   <body>
     <h1>Zapisz by zapamiętać</h1>
     Pamiętaj by nie zapisywać
     <script>
-        const fs = require('fs');
         document.write(process.versions.node)
         document.write(process.versions.chrome)
         document.write(process.versions.electron)
+<!---   const fs = require('fs');
         fs.writeFileSync('pliczek.txt', 'zawartosc')
+--->
     </script>
     <br/>
 
