@@ -1,8 +1,7 @@
 const electron = require('electron');
 const path = require('path');
 const fs = require('fs');
-
-const dialog = electron.remote.dialog;
+const { dialog } = require('electron')
 
 var save = document.getElementById('save');
 
